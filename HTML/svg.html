@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="300" height="300" viewbox="0 0 100 100" style="background-color: rgb(41, 229, 229);">
+     <circle r="25" cx="50" cy="50" fill="yellow" stroke="red" stroke-width="2"/>
+     <circle r="4" cx="38" cy="46" fill="white" stroke="red" stroke-width="1"/>
+     <!-- animation -->
+     <circle r="2" cx="38" cy="48" fill="black" >
+          <animate attributeName="cx" from="38" to="40" dur="5s" repeatCount="indefinite"/>
+     </circle>
+     <circle r="4" cx="60" cy="45" fill="white" stroke="red" stroke-width="1"/>
+     <!-- animation -->
+     <circle r="2" cx="60" cy="47" fill="black" >
+        <animate attributeName="cx" from="60" to="62" dur="5s" repeatCount="indefinite"/>
+     </circle>
+     <rect width="5" height="5" x="46" y="50"/>
+     <ellipse rx="1" ry="1" cx="51" cy="56" fill="white" stroke="">
+        <animate  attributeName="cy"  from="56" to="70" dur="5s" repeatCount="indefinite"/>
+     </ellipse>
+     <ellipse rx="7" ry="3" cx="50" cy="63" fill="red" stroke="pink">
+        <animate attributeName="ry" from="3" to="1" dur="5s" repeatCount="indefinite"/>
+     </ellipse>
+    </svg>
+</body>
+</html>

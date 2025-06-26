@@ -1,0 +1,618 @@
+
+DAY_1 OF HTML5
+
+HTML: HYPERTEXT MARKUP LANGUAGE
+
+1. WHAT IS HTML?
+- HTML stands for HyperText Markup Language.
+- HyperText: Text containing hyperlinks, used to link web pages.
+- Markup: collection tags (like <img>, <p>, <h1>–<h6>, <audio>, <video>) to define elements on a webpage.
+
+2. WHY USE HTML?
+- HTML is used to build the structure of web pages and websites.
+- It forms the backbone of all web content.
+
+3. CURRENT VERSION
+- HTML5 (latest: HTML5.3)
+
+4. KEY FEATURES OF HTML5
+- Multimedia Support: Easily embed images, audio, video, and iframes (for embedding other web pages).
+- Semantic Tags: Tags with clear meaning for both developers and browsers (e.g., <header>, <footer>, <nav>, <aside>, <figure>, <caption>, <main>, <section>). These improve SEO (Search Engine Optimization).
+- Form Enhancements: New input types like date, datetime, url, range, file, image, search, etc.
+- Entities: Special characters or symbols (e.g., &amp;, &lt;, &gt;).
+- SVG: Scalable Vector Graphics for drawing shapes and images.
+- Canvas: For drawing graphics via scripting (JavaScript).
+- Offline Support: Local storage for saving data in the browser.
+- Web APIs: Access to features like geolocation, fetch (for HTTP requests), cookies, etc.
+- Responsiveness: Works with CSS Media Queries for responsive design.
+
+5. BASIC STRUCTURE OF AN HTML DOCUMENT
+- The first line should be:
+  <DOCTYPE html>  <!-- Declares the HTML CURRENT version (HTML5) -->
+
+6. TAGS AND ELEMENTS
+- Tag: Defines the type of content (e.g., <img>, <p>, <h1>).
+- Element: A tag with its content.
+  Example: <p>Hi everyone</p>
+    - <p>: Opening tag
+    - </p>: Closing tag
+    - Hi everyone: Content
+
+7. TYPES OF ELEMENTS
+- Container Elements: Have content inside them.
+  Example: <h1>Heading</h1>
+- Empty Elements: Self-closing, no content inside.
+  Examples: <img />, <hr />
+
+8. SUMMARY
+- HTML is essential for web development.
+- Learn the structure, tags, and features to build modern, responsive websites.
+
+
+STRUCTURE of webpage :
+
+<!DOCTYPE html>  <!-- represents/tells the current version of the html (HTML5)-->
+<html> <!--the root of the Html-->
+<!-- it consits of metadata(info of webpage ,author,responsive),links ,title,favicons-->
+    <head>
+      <title>intro-section</title><!-- title of webpage-->
+    </head>
+    <body> <!-- content of the webpage is present (presentation) layer -->
+        <!-- content goes Here -->
+    </body>
+</html>
+
+
+
+The <h1> to <h6> tags represent headings with different sizes:
+
+<h1> is the largest heading.
+<h2> is slightly smaller.
+<h3> is smaller than <h2>, and so on.
+<h6> is the smallest heading.
+
+Default browser sizes (approximate):
+<h1>: 2em (about 32px)
+<h2>: 1.5em (about 24px)
+<h3>: 1.17em (about 18.72px)
+<h4>: 1em (about 16px)
+<h5>: 0.83em (about 13.28px)
+
+
+Day_2  OBJECTIVE 
+Paragraphs 
+Attributes
+links 
+img-links 
+
+
+Content :
+
+1.Paragraphs (<p> tag)
+Used to define blocks of text as paragraphs.
+ - Paragraphs are block-level elements: they start on a new line and take up the full width.
+Example:
+<p>This is a paragraph.</p>
+
+2.Line Breaks (<br> tag)
+Used to insert a line break within text
+<br> is a void (empty) element (no closing tag).
+- Example:
+<p>Line one<br>Line two</p>
+
+3.Entities
+ Special symbols or characters that cannot be typed directly.
+   - Syntax: &entity_name; or &#code;
+   - Examples:
+        - &copy; → ©
+        - &nbsp; → (non-breaking space) Used to add extra spaces between words or characters.
+        - &#128512; → 😀 (emoji)
+   - Used for symbols, reserved characters, and spaces.
+
+4.Preformatted Text (<pre> tag)
+   - Displays text exactly as it is written in the HTML (preserves spaces, tabs, and line breaks).
+   - Useful for code blocks, poetry, or any text where formatting matters.
+   - Example:
+   <pre>
+     This   is   preformatted
+     text.
+    </pre>
+
+5.Attributes:
+Attributes give additional information about an element or tag.
+They are written inside the opening tag as name="value" and define properties like links, sources, sizes, or behavior.
+
+eg: src width height ,alt target  ,type id ,placeholder etc...
+
+<img src="logo.png" alt="Logo" width="100px">
+Here, src, alt, and width are attributes of the <img> tag.
+
+
+6.Hyperlinks (<a> tag)
+Used to create clickable links.
+   - Absolute URL: Full web address (e.g., https://www.google.com).
+   - Relative URL: Local file path (e.g., /demo.html).
+   - Target Attribute:
+     - target="_blank": Opens link in a new tab.
+     - target="_self": Opens link in the same tab (default).
+   - <a> is an inline element (occupies only the width of its content).
+
+UseCase :
+Navigation Between Pages
+- Example: <a href="/about.html">About Us</a>
+External Links
+-Example: <a href="https://www.google.com" target="_blank">Google</a>
+Downloadable Files
+-Example: <a href="files/sample.pdf" download>Download PDF</a>
+Email Links
+Example: <a href="mailto:info@example.com">Email Us</a>
+Telephone Links
+Example: <a href="tel:+1234567890">Call Us</a>
+Jump to Section (Internal Links)
+Navigate to a specific section within the same page.
+   - Example: <a href="#contact">Go to Contact Section</a>
+
+
+7. Images (<img> tag)
+   - Used to display images.
+   - Attributes:
+     - src: Image path (relative or absolute).
+     - alt: Alternative text for accessibility.
+     - width/height: Set image size.
+   - <img> is a self-closing (void) tag.
+   - Example: <img src="logo.png" alt="Logo" width="100px" height="100px" />
+
+Image as a Link
+   - Place an <img> inside an <a> to make the image clickable.
+   - Example:
+     html
+     <a href="https://www.example.com">
+       <img src="logo.png" alt="Logo" width="100px" />
+     </a>
+
+
+     
+Day_3:
+HTML Lists
+
+
+What are Lists in HTML?
+-Lists are used to group related items together on a webpage.
+- Each item in a list is defined using the <li> (list item) tag.
+
+
+Types of Lists in HTML
+ul :Unordered List  : Displays items with bullet points.
+Ol: Ordered list :Displays items with numbers or letters.
+dl : description list :Used for terms and their descriptions.
+
+TERMINOLGY
+li :LIST_ITEMS 
+dt: description term
+dd: description data
+
+Attributes of Lists
+<ol> Attributes:
+- type: Changes the numbering style (e.g., 1, A, a, I, i).
+    - Example: <ol type="A"> gives A, B, C...
+- start: Sets the starting value of the first list item.
+    - Example: <ol start="5"> starts numbering from 5.
+- reversed: Reverses the order of the list numbering.
+  - Example: <ol reversed>
+<ul> Attributes:
+style =""
+
+Real-Time Use Cases
+- Navigation Menus
+  - Use <ul> to create horizontal or vertical navigation bars.
+  - Example:
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+  </ul>
+
+- Step-by-Step Instructions
+  - Use <ol> to show steps in a process.
+  - Example:
+    <ol>
+      <li>Register an account</li>
+      <li>Verify your email</li>
+      <li>Login to the dashboard</li>
+    </ol>
+   
+Feature Lists
+  - Use <ul> to highlight features or benefits.
+  - Example:
+    <ul>
+      <li>Free Shipping</li>
+      <li>24/7 Support</li>
+      <li>Easy Returns</li>
+    </ul>
+Glossaries or FAQs
+  - Use <dl> for terms and definitions.
+  - Example:
+  <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+  </dl>
+
+Ranking or Top Lists
+  - Use <ol> for top 10 lists, rankings, etc.
+  - Example:
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+    </ol>
+
+Day_4
+Multimedia Tags 
+Text_formattings
+
+
+Multimedia Tags 
+
+different Types of Multimedia tags 
+images 
+audio
+video
+iframes 
+
+
+Image (<img>)
+     - Use: Display pictures, logos, product images, etc.
+     - Example:
+       <img src="logo.png" alt="Company Logo" width="150">
+
+ - Audio (<audio>)
+     - Use: Play music, podcasts, or sound effects.
+     - Example:
+       <audio controls>
+         <source src="intro.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+       </audio>
+       - Attributes: controls, autoplay, loop, muted, src
+     -Real-Time Use Case: Adding a background music player to a portfolio site.
+
+   - Video (<video>)
+     - Use:Show product demos, tutorials, or advertisements.
+     - Example:
+       <video width="320" height="240" controls>
+         <source src="ad.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+       </video>
+       - Attributes: controls, autoplay, loop, muted, poster, width, height, src
+    Real-Time Use Case: Embedding a product demo video on an e-commerce product page.
+
+    Iframe (<iframe>)
+     - Use: Embed maps, YouTube videos, or other web pages.
+     - Example:
+       <iframe src="https://www.google.com/maps" width="400" height="300"></iframe>
+     - Real-Time Use Case: Showing a Google Map location on a contact page or embedding a YouTube video in a blog post.
+ - Attributes: src, width, height, frameborder, allowfullscreen etc..
+
+
+
+Text Formatting Tags 
+
+-text formatting tags are used  to improve readability, highlight important information, and present data clearly.
+
+   - Bold (<b>, <strong>)
+     - Use: Highlight important words or warnings.
+     - Example: <strong>Warning:</strong> Password is case-sensitive.
+     - Real-Time Use Case: Drawing attention to important instructions or alerts.
+
+   - Italic (<i>, <em>)
+     - Use: Emphasize words, technical terms, or quotes.
+     - Example: <em>Note:</em> Save your work frequently.
+     - Real-Time Use Case: Highlighting notes or foreign words in articles.
+
+     - Underline (`<u>`)
+     - Use: Underline text for emphasis (less common in modern web design).
+     - Example: `<u>Important</u>`
+     - Real-Time Use Case: Underlining links or key points in educational content.
+
+   - Mark (`<mark>`)
+     - Use: Highlight search terms or keywords.
+     - Example: `Search result: <mark>HTML</mark>`
+     - Real-Time Use Case: Highlighting user search terms in search results.
+
+   - Small (`<small>`)
+     - Use: Show disclaimers, copyright, or less important text.
+     - Example: `<small>© 2025 Company Name</small>`
+     - Real-Time Use Case: Displaying copyright info in a website footer.
+
+   - Delete (`<del>`) and Insert (`<ins>`)
+     - Use: Show edits or changes in content.
+     - Example: `<del>Old Price</del> <ins>New Price</ins>`
+     - Real-Time Use Case: Showing price changes or corrections in blog posts.
+
+   - Superscript (`<sup>`) and Subscript (`<sub>`)
+     - Use: Write mathematical formulas or chemical equations.
+     - Example: `E = mc<sup>2</sup>`, `H<sub>2</sub>O`
+     - Real-Time Use Case: Displaying scientific data or math in educational websites.
+
+
+DAY_5
+TABLES
+
+- An HTML table is used to organize and display data in rows and columns
+-Useful for showing schedules, price lists, reports, and structured information
+
+Real-Time Use Cases of Tables
+    🏫 Timetables – School or college schedules
+    🛒 Product Price Lists – Display product names with prices
+    👨‍💼 Employee or Student Records – Names, IDs, contact details
+    💰 Financial Reports – Income/Expense breakdown
+    🔄 Comparison Charts – Compare features or stats
+
+TERMINOLGY 
+Table ELements
+tr: table Row   
+th:Table header cell (bold and centered by default).  ----> used for creating the columns (headings)
+td:table data------>used for creating the columns (data)
+<thead>	:Groups header section of the table
+<tbody>	:Groups the main data rows
+<tfoot>	:Groups footer rows (e.g., totals, notes)
+<caption>	Adds a title or description above the table
+<colgroup>	Groups a set of <col> elements for styling
+<col>	Defines column-level styles like width or color
+
+Attributes : which give additional info to tag or element 
+
+cellpadding :space around the content (Space inside each cell.)
+cellspacing : Space between cells. (outside of the border)-
+align : used for alignment content : left right centet 
+bgcolor:used for applying background color a table 
+style : used for applying the styles to table
+border : it is a thin  or thick around the table 
+colspan : used for merging the columns  (Merge cells horizontally.)
+rowspan : used for merging the rows  ( Merge cells vertically.)
+width,height
+
+
+
+2. Basic Table Structure
+   <table>
+     <tr>
+       <th>Header 1</th>
+       <th>Header 2</th>
+     </tr>
+     <tr>
+       <td>Data 1</td>
+       <td>Data 2</td>
+     </tr>
+   </table>
+3. Table with Merged Cells
+<table border="1">
+     <tr>
+       <th>Name</th>
+       <th colspan="2">Contact</th>
+     </tr>
+     <tr>
+       <td>John</td>
+       <td>12345</td>
+       <td>john@example.com</td>
+     </tr>
+     <tr>
+       <td rowspan="2">Jane</td>
+       <td>67890</td>
+       <td>jane@example.com</td>
+     </tr>
+     <tr>
+       <td>54321</td>
+       <td>jane2@example.com</td>
+     </tr>
+</table>
+ 
+Day_5
+FORMS 
+
+
+What is a Form?
+An HTML form is used to collect user input data that can be sent to a server for processing.
+
+ Purpose: To gather information from users.
+
+📌 What kind of data can forms collect?
+  ▶▶Name, Age, Gender, DOB
+  ▶▶Email, Password, Address
+  ▶▶Preferences (color, radio, checkbox)
+  ▶▶File uploads (images, docs)
+  ▶▶URLs, phone numbers, etc.
+
+🌐 Real-Time Examples of Forms
+Use Case	Purpose
+🔐 Login System:	Email + Password authentication
+🎟️ Ticket Booking	:Name, date, seat, payment, etc.
+🛒 E-Commerce	Checkout forms, filters, feedback forms
+🔍 Search Bar	Get input from user for filtering
+🍽️ Restaurant Form	Table reservation, food ordering
+🧰 Service Forms	Booking appointments, feedback, support
+
+🏗️ Form Elements
+ These are used to build the form's structure:
+
+Element	Description
+<form>	The container for all form fields
+<input>	Core input field (text, number, etc.)
+<label>	Labels connected to inputs
+<textarea>	Multi-line text (comments, notes)
+<select>	Drop-down options
+<option>	Item in a drop-down
+<datalist>	Suggestion list for inputs
+<optgroup>	Grouping related options
+<fieldset>	Logical grouping of form controls
+<legend>	Title for a fieldset group
+<button>	Button to submit/reset form
+
+🎮 Form Controls (Attributes)
+Used to control behavior and validate input:
+
+Attribute	Use
+required	Makes the input mandatory
+readonly	Shows data, but not editable
+disabled	Input is visible but not usable
+placeholder	Hint text inside input
+type	Defines input type (text, email, etc.)
+min, max	Set range for numbers/dates
+maxlength	Limit characters
+pattern	Custom regex validation 
+
+
+Day_6
+Meta Tags – Data About the Webpage 
+
+Meta tags go inside the <head> section and are not visible on the page — but they tell the browser and search engines how to treat or display the page.
+
+<meta charset="UTF-8">
+Character encoding = UTF-8 (supports all major languages like తెలుగు, हिंदी, 中文, emojis 😊).
+Without this: special chars may break.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Makes the webpage responsive on mobile & tablet.
+Zooming & scaling handled smoothly.
+This tag is mandatory for modern responsive design. Without it, even CSS media queries might fail on mobile devices.
+
+<meta name="description" content="Brief summary of the page">
+Gives a short summary of the page content.
+Helps boost SEO (Search Engine Optimization)
+Encourages users to click your link if the description is relevant.
+
+🔹 <meta name="keywords" content="ai,chatgpt,tools">
+Helps search engines identify keywords (not as strong as before, but still helpful).
+
+🔹 <meta name="author" content="Boss Prachar">
+Declares who made the page.
+
+
+Semantic Tags – Meaningful to Browser + Developer
+Semantic tags give clear meaning to both the browser and developer. They describe what the content is, not how it looks.
+
+<header>
+Represents: Top section of the page
+ Contains: Branding, logo, navigation, login/signup
+ Real-time use: Top navbar of an LMS or website
+
+<nav>
+Represents: Navigation menu
+ Contains: Links to sections or other pages
+Real-time use: Menu bar with Home, About, Contact links
+
+<main>
+Represents: Main unique content of the page
+ Contains: Articles, sections, primary info
+Real-time use: Core content area of a blog or dashboard
+
+<section>
+Represents: Thematic grouping/block
+ Contains: Headings, paragraphs, lists, media
+Real-time use: "Top Courses", "Offers", "Latest News" block
+
+<article>
+Represents: Independent content
+ Contains: Blog post, review, news item
+Real-time use: A product review, or an LMS announcement post
+
+<aside>
+Represents: Sidebar/secondary content
+ Contains: Ads, extra links, recommendations
+Real-time use: Product suggestions, newsletter signup, ads panel
+
+<footer>
+Represents: Bottom section of the page
+ Contains: Copyright info, contact, social media links
+Real-time use: "© 2025 Boss Prachar", Facebook/LinkedIn links, privacy policy
+
+<figure>
+Represents: Media + caption container
+ Contains: Image, chart, code snippet
+Real-time use: Screenshot with label, diagram + explanation
+
+<figcaption>
+Represents: Description of the media inside <figure>
+ Contains: Caption or title of image/chart
+Real-time use: “AI Workflow Diagram”, “Side view of Laptop”
+
+Non-Semantic HTML Tags
+These tags do not tell the browser what the content means — they’re just containers for layout or styling.
+<div>
+    Meaning: "Division" — a block-level container
+    Contains: Anything – text, images, other tags
+    Use: Styling/grouping sections with CSS or JavaScript
+    Real-Time Use:
+        Creating a card layout
+        Wrapping multiple elements (like form fields or dashboard blocks)
+
+<div class="card">
+  <h2>Course Title</h2>
+  <p>Course Description...</p>
+</div>
+
+<span>
+      Meaning: "Inline Container" — a small wrapper around text
+      Contains: Inline text or small elements
+      Use: Apply styles, highlight or modify a piece of text
+      Real-Time Use:
+            Highlight discount price
+            Style part of a review text
+        
+      <p>Price: ₹<span style="color: green;">499</span></p>
+
+
+SVG: Scalable Vector Graphics – Simple Expert Notes
+
+1. What is SVG?
+   - SVG stands for Scalable Vector Graphics.
+   - It is an XML-based format for creating two-dimensional graphics directly in HTML.
+
+2. Why Scalable
+   - SVG images do not lose quality when resized or zoomed in, unlike JPG or PNG.
+   - Perfect for logos, icons, charts, and illustrations that need to look sharp at any size.
+
+3. Why "Vector"?
+   - SVG uses mathematical shapes (like circles, rectangles, lines, polygons, paths) instead of pixels.
+   - This makes SVGs lightweight and easily editable.
+
+4. Why "Graphics"?
+   - SVG can be used for static images, icons, diagrams, and even animations and interactive graphics.
+
+5. Key Features of SVG
+   - Scalable: No loss of quality at any size.
+   - Searchable: SVG content can be searched and indexed by search engines (good for SEO).
+   - Editable: SVG code can be edited with a text editor or design tools.
+   - Animatable: SVG elements can be animated with CSS or JavaScript.
+   - Accessible: Text in SVG can be read by screen readers.
+   - Small File Size: Usually smaller than raster images for simple graphics.
+
+6. Basic SVG Shapes
+   - `<circle>`: Draws a circle.
+   - `<rect>`: Draws a rectangle or square.
+   - `<ellipse>`: Draws an ellipse (oval).
+   - `<line>`: Draws a straight line.
+   - `<polygon>`: Draws a shape with multiple sides (e.g., triangle, pentagon).
+   - `<path>`: Draws complex shapes and curves.
+
+7. Example: Simple SVG
+   ```html
+   <svg width="100" height="100">
+     <circle cx="50" cy="50" r="40" fill="orange" />
+     <rect x="10" y="10" width="30" height="30" fill="blue" />
+     <line x1="0" y1="0" x2="100" y2="100" stroke="red" stroke-width="2" />
+   </svg>
+   ```
+
+8. Real-Time Use Cases
+   - Website logos and icons (always sharp, even on retina screens)
+   - Charts and graphs (interactive dashboards)
+   - Infographics and diagrams
+   - Animated illustrations (loading spinners, progress bars)
+   - Maps and custom shapes
+
+9. SEO and Accessibility
+   - SVGs are search engine friendly and can be indexed.
+   - Text inside SVG is selectable and accessible.
+

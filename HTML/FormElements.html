@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formelements</title>
+    </head>
+    <body>
+        <!-- formelements : creates the structureof the Forms   -->
+         <!-- eg: form input lable  ,fieldset.leged select option optgrough datalist textarea button -->
+
+         <!-- form_Layout -->
+          <form >
+            <label for="name">FullName</label><br>
+            <input type="text" placeholder="enter some value" value=""><br>
+            <input type="submit" />
+          </form>
+
+          <!-- dropdowns -->
+           <form  >
+            <select name="" id="" >
+                <option value="">Vivo</option>
+                <option value="">Iphone</option>
+                <option value="" selected>sumsung</option>
+                <option value="">dell</option>
+                <option value="">macbook</option>
+                <option value="">lenevo</option>
+            </select>
+           </form>
+
+        <!-- dropdown with categories -->
+        <form >
+            <select name="" id="" multiple label="please select">
+            <!-- used for Grouping related options -->
+              <optgroup label="Mobiles">
+                  <option value="">Vivo</option>
+                <option value="">Iphone</option>
+                <option value="" selected>sumsung</option>
+              </optgroup>
+               <optgroup label="laptops">
+                 <option value="">dell</option>
+                <option value="">macbook</option>
+                <option value="">lenevo</option>
+               </optgroup>
+            </select>
+         </form>
+
+         <!-- datalist  : it provides predefined values inside the input tag -->
+        <form action="">
+        <input list="cs" name="" >
+          <datalist id="cs">
+           <option value="india"/>
+           <option value="china"/>
+           <option value="usa"/>
+           <option value="pak"/>
+          </datalist>
+        </form>
+   
+        <!-- textarea : reviews ,address,product-description ,comments ,paragraph of kind of content -->
+         <form >
+         <textarea name="" id="" cols="20" rows="10"></textarea>
+         <button type="reset">submit</button>
+         </form>
+
+         <!-- fieldset& legend  -->
+          <form >
+          <fieldset>
+            <legend>PersonalInfo</legend>
+                 <label for="">FullName</label><br>
+            <input type="text" placeholder="enter ur full name"><br>
+            <label for="">email</label><br>
+            <input type="email" placeholder="enter ur full email"><br>
+            <label for="">Mobile</label><br>
+            <input type="tel" placeholder="enter ur full mobile"><br>
+          </fieldset>
+           <fieldset>
+            <legend>Education detailes</legend>
+              <label for="">Grad</label><br>
+             <select name="" id="">
+                <option value="">Btech</option>
+                <option value="">Degree</option>
+                <option value="">Mtech</option>
+             </select><br>
+             <label for="">CollageName</label><br>
+             <input type="text" placeholder="enter ur collage Name"><br>
+               <label for="">PasswordYear</label><br>
+             <input type="datetime" placeholder="enter ur PasswordYear"/><br>
+           </fieldset>
+          </form>
+
+    <button label="please select">select</button><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    </body>
+</html>

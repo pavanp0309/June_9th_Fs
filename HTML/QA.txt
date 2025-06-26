@@ -1,0 +1,67 @@
+Day_1 
+1. What is a Webpage?
+2. What is a Website?
+3. What is a URL?
+4. What is the difference b/w Single Page Website and Multi Page Website?
+5. What is the difference b/w Static Webpage and Dynamic Webpage ?
+6.What does HTML stand for?
+7.What is the latest version of HTML? Name some new features introduced in HTML5.?
+8.What is the difference between a tag and an element in HTML?
+9.Explain the difference between container elements and empty elements with examples.
+10.What is the purpose of the <!DOCTYPE html> declaration?
+11.How do headings (<h1> to <h6>) differ in size and usage?
+
+Day_2
+12.What is the purpose of the `<a>` tag in HTML?
+13.What is the difference between an absolute URL and a relative URL in the `href` attribute?
+14.What does the `target="_blank"` attribute do in an anchor tag?
+15.What is an attribute in HTML?
+16.What is the purpose of the `<br>` tag?
+17.What is the `<pre>` tag used for?
+18.What are HTML entities? Give two examples.
+
+Day_3
+19. What are the three main types of lists in HTML?
+20. write the difference b/w ordered and unordered list 
+21 .explain the attributes of list? 
+
+Day_4
+22.What is the purpose of the `alt` attribute in the `<img>` tag?
+23.What is the use of the `<iframe>` tag
+24.what is the use of Poster attribute in video tag?
+25.explain all video and audio attributes in html ?
+26.What does the `controls`  and Type attribute do in the `<audio>` and `<video>` tags?  
+27.How can you embed a YouTube video or Google Map into your webpage?  
+
+Day_5
+28.What is the purpose of the <table> tag in HTML?
+29.What is the difference between <th> and <td>?
+30.What is the difference between cellpadding and cellspacing?
+31.How do you merge two cells horizontally and vertically in a table?
+32.What is the purpose of the <caption> tag in a table?
+33.What is the use of the <colgroup> and <col> elements?
+34.What are <thead>, <tbody>, and <tfoot> used for? 
+35.write the difference table attributes and table Elements with examples 
+
+Day_6
+36.What is the difference between the GET and POST methods in a form?
+37.What is the use of the name attribute in form controls?
+38.explain are the different  form input type attributevalues available in HTML?
+
+Practical Questions 
+
+Day_7 
+39.explain the difference form_elements and form_controlls
+40.explain the difference required readonly and disabled attributes
+41.explain the difference placeholder and value attributes in html?
+42.What is the difference between semantic and non-semantic HTML tags?
+43.explain the importantance of meta tags in Html 
+44.explain the difference between section and div tags
+45.explain the difference between div and span tags?
+
+Day_8 
+46. What does SVG stand for and what is it used for in web development?
+47.what is the Difference b/w git and Github ?
+48.explain the commands for pushing the code into github?
+49.what is sdlc (software development lifecyle)
+50.what is Fullstack ? why should we learn it?
