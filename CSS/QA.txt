@@ -1,0 +1,7 @@
+DAY_1
+1.what is css ? write its advantages  & disadvantages ?
+2.write the features of css3 ?
+3.what is selector in css ? why we use it ?
+4.explain different types of selectors?
+5.explain different ways to add css to html ? and its imporatance 
+6.How does a class selector differ from an ID selector? When would you use each?

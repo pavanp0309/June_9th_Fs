@@ -1,0 +1,131 @@
+DAY_1 (OBJECTIVE)
+🎯WHAT IS CSS ?
+🎯WHY CSS ?
+🎯FEATURES OF CSS 
+🎯WHAT IS SELECTOR
+🎯DIFFERENT WAYS TO LINK CSS TO HTML 
+
+
+CSS: CASCADING STYLE SHEET 
+CASCADING :set of rules applied to an html Elements  
+     casecade: (it helps browser decide what kind properties to apply to element when properties are applied to same element )
+css is used for applying the styles or controls the layout, colors, fonts, and overall visual appearance of web pages.
+
+WHY CSS ?
+- Separates content (HTML) from presentation (CSS)
+- Makes web pages visually attractive and user-friendly
+- Enables responsive design for different devices
+- Allows reusability and maintainability of styles
+- Reduces code duplication
+
+🎯 CURRENT VERSION OF CSS
+- Standard Version: CSS3 (with ongoing updates and new modules)
+
+
+🎯FEATURES 
+1. Flexbox and Grid System (for layouts(weblayouts), dashboards, image galleries, cards)
+2. Animations (keyframes, transitions)
+3. Transitions and Transformations (rotate, scale, skew, etc.)
+4. Advanced Selectors (Pseudo-classes and Pseudo-elements)
+5. Responsive Web Design (RWD) using Media Queries
+6. CSS Variables (custom properties)
+7. Counters, color schemes, enhanced background properties
+8. Gradients: linear-gradient, conic-gradient, radial-gradient
+9. Box shadows, text shadows
+10. Custom fonts using @font-face
+11. CSS Functions (calc(), var(), clamp(), etc.)
+12. CSS Units (px, em, rem, %, vw, vh, etc.)
+13. Layering with z-index
+14. CSS specificity and inheritance
+        9.box-shadows etc...
+
+
+🎯 WHAT IS A SELECTOR?
+A selector is a pattern used to select the HTML elements you want to style.
+
+
+🎯SELECTOR : something that selects or chooses  an element 
+    Example:
+    <h1 id="main-heading" class="title" data-target="heading">Hello</h1>
+    - h1: Element selector (selects all <h1> elements)
+    - #main-heading: ID selector (selects element with id="main-heading")
+    - .title: Class selector (selects elements with class="title")
+    - [data-target="heading"]: Attribute selector (selects elements with data-target="heading")
+
+TYPES OF SELECTORS
+
+1. SIMPLE SELECTORS
+   - Type Selector (Element/Tag selector): e.g., h1, p, div
+   - ID Selector: e.g., #main-heading
+   - Class Selector: e.g., .title
+   - Group Selector: e.g., h1, p, .title
+   - Universal Selector: e.g., *
+
+2. COMBINATOR SELECTORS (Describe the relationship between selectors)
+   - Child Selector (>): Selects direct children. Example: div > p
+   - Descendant Selector (space): Selects all descendants. Example: div p
+   - General Sibling Selector (~): Selects all siblings. Example: h1 ~ p
+   - Adjacent Sibling Selector (+): Selects the next sibling. Example: h1 + p
+
+3. PSEUDO-ELEMENT SELECTORS
+   - ::first-letter, ::first-line, ::before, ::after, ::placeholder, ::marker, ::selection, etc.
+
+4. PSEUDO-CLASS SELECTORS
+   - :first-child, :last-child, :nth-child(), :focus, :required, :max-length, :read-only, :disabled, :checked, :hover, :active, :visited, :not(), etc.
+
+5. ATTRIBUTE SELECTORS
+   - [attribute], [attribute="value"], [attribute^="value"], [attribute$="value"], [attribute*="value"], etc.
+
+🎯 CSS SYNTAX
+A CSS rule-set consists of a selector and a declaration block:
+    selector {
+      property: value;
+      property2: value2;
+    }
+
+🎯 CASCADE, INHERITANCE, AND SPECIFICITY
+- Cascade: Determines which CSS rule applies when multiple rules target the same element.
+- Inheritance: Some CSS properties are inherited from parent to child elements (e.g., color, font-family).
+- Specificity: Determines which selector has higher priority.
+
+🎯 COMMENTS IN CSS
+    /* This is a comment */
+
+🎯 DIFFERENT WAYS TO ADD CSS TO HTML
+
+1. Inline CSS :directly we apply to an Html Element  
+   - Example: <h1 style="color: red; text-align: center;">Hello</h1>
+     - style: Attribute
+     - color, text-align: Properties/Keys
+     - red, center: Values
+
+Example :
+      <h1 style="color: red;text-transform: lowercase;text-align: center;text-decoration: underline;">HELLO CSS DEV</h1>
+     <div style="background-color: lightcyan;border: 2px solid red;width: 100px;border-radius: 10px;padding: 10px;">
+        <p style="color:orangered">IPHONE</p>
+        <p style="color: green;">RS1000</p>
+     </div>
+    
+
+2. Internal CSS: WRITEN USING STYLE TAG INSIDE HEAD TAG
+   - Example:
+     <head>
+       <style>
+         selector {
+           property: value;
+         }
+       </style>
+     </head>
+
+3. External CSS: Sepearte file Linked html head TAG
+   - Example:
+     <head>
+       <link rel="stylesheet" href="./index.css" />
+     </head>
+
+🎯 BEST PRACTICES
+- Use external CSS for large projects for better maintainability.
+- Use class selectors for reusable styles.
+- Avoid using too many inline styles.
+- Use semantic HTML for better accessibility and SEO.
+- Organize CSS with comments and logical grouping.

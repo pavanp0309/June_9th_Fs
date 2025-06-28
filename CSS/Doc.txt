@@ -1,0 +1,54 @@
+DAY_1
+WHAT IS CSS
+WHY CSS 
+FEATURES OF CSS
+WHAT IS SELECTORS
+DIFFERENT WAYS TO ADD CSS HTML 
+
+
+CSS :CASCADING STYLESHEET 
+CASCADING :set of rules applied for an HTml ELEMENTS
+ CASCADE : It decide WHAT to property apply to html_ELEMENT WHEN STYLES ARE applied
+
+CSS: It used for styling or layout of webapages ,fonts ,colors animation etc 
+
+CSS3 Features 
+1.FLEXBOX (Weblayouts,imageGalleries ,navbar footer cards etc ...)(usedc for Developing 1d layout either Row or column)
+2.GRID  (newsPaper Layouts,admin panels etc..) (used for Developing 2d layouts both row and column)
+3.animation & transitions and 
+4.transformation (Rotate,scale,skew translate)
+5.RESPONSIVE WEBDESIGN (RWD) using the Media queries
+6.PSEUDO_CLASS AND PSEUDO_ELEMENTS 
+7.enchancement of Background property  (LInear-Gradient Conical GRadient RAdial Gradient)
+
+DIIFFERENT WAYS TO LINK CSS TO HTML ELEMENTS 
+1.INLINE  : directly we apply to an Html Element  
+2.INTERNAL : WRITEN USING STYLE TAG INSIDE HEAD TAG
+3.EXTERNAL CSS  : Sepearte file Linked html head TAG
+
+ATTRIBUTES : ADDITIONAL INFORAMTION TO TAGS
+EG: width height src href name value id class  type  
+
+SELECTOR: ITS IS PATTERN USED FOR SELECTING HTML ELEMENTS TO STYLE 
+TYPES OF SELECTOR 
+1.simple SELECTOR : ELEMENT /tag selector  id class Group selector Universal selector 
+2.COMBINATORS SELECTOR :(TALAKS ABOUT RELATIONSHIP SELECTOR)
+          child SELECTOR 
+          decendent selector
+          adjancent sibiling selector 
+          general sibiling selector
+3.PSEUDO_CLASS   :
+    hover link active visted nth-child  first-child etc...
+4.PSEUDO_ELEMENTS  ::
+      SELECTON MARKER FIRST_LINE  FIRST-LETTER ETC ..
+5.ATTRIBUTE SELECTOR 
+
+SYNTAX
+property:value;
+
+selector{
+  property:value; 
+  color:red;
+  text-align:center;
+  background-color:green; 
+}
