@@ -129,3 +129,105 @@ Example :
 - Avoid using too many inline styles.
 - Use semantic HTML for better accessibility and SEO.
 - Organize CSS with comments and logical grouping.
+
+🔎🐕‍🦺SELECTORS
+CSS selectors help you target HTML elements to apply styles.
+1. ID Selector
+Syntax:#idName { ... }
+🔹Targets one unique element with that id.
+🔹 Should only appear once in the HTML.
+🔹use For something that exists only once on the page:
+ eg:  Main header Footer Special banner
+
+2.Class Selector
+.className { ... }
+🔹 Can be used on multiple elements.
+🔹 One element can have multiple classes.
+🔹 To create reusable styles. eg Buttons Card Alert Sections 
+eg:
+<p class="highlight">Hello CSS</p>
+<h3 class="highlight">Simple Selectors</h3>
+.highlight {
+  color: blue;
+  text-transform: uppercase;
+}
+
+3.Tag / Element Selector
+Syntax:tagName { ... }
+🔹Targets all elements of that tag.
+🔹 Apply default or base styles to HTML elements like:
+      ▶All headings (h1, h2)
+      ▶Paragraphs (p)
+      ▶Lists (ul, li)
+
+4.Universal Selector
+Syntax:* { ... }
+🔹Selects every element on the page.
+🔹 Reset default browser styles.
+🔹 Apply a global font or base rule.
+🔹Don’t overuse it on heavy styles (like shadows) – can slow rendering.
+example:
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+5.Group Selector 
+Syntax: selector1, selector2, selector3 { ... }
+
+ ▶Apply the same styles to different selectors.
+ ▶Avoid writing the same style again and again.
+ ▶Keeps CSS clean & DRY (Don’t Repeat Yourself).
+
+
+Specificity (who wins when rules conflict)
+▶ID (#id)	100
+▶Class (.class)	10
+▶Tag (div)	1
+▶Universal (*)	0
+ Higher number → higher priority.
+
+CSS Combinators :
+CSS combinators define relationships between selectors, allowing you to target elements based on their position in the HTML structure.
+
+1.Descendant Selector (A B)
+ Selects: All <B> elements that are descendants (children, grandchildren, etc.) of <A>
+ example:
+ div p {
+  color: green;
+}
+This will color all <p> elements inside a <div> (no matter how deeply nested) green.
+div .text {
+  color: rgb(0, 17, 128);
+}
+Selects: Any element with class .text that is a descendant of a <div>.
+
+2.Child Selector (A > B)
+Selects: All <B> elements that are direct children of <A>.
+div > p {
+  color: red;
+}
+This will color only the <p> elements that are direct children of <div> red.
+
+3.Adjacent Sibling Selector (A + B)
+Selects: The first <B> element immediately after <A> (they share the same parent).
+example
+div + p {
+  background-color: aqua;
+}
+This will set the background color of the first <p> that comes right after a <div> to aqua.
+
+4.General Sibling Selector (A ~ B)
+Selects: All <B> elements that are siblings of <A> and come after <A> (not necessarily immediately).
+Example:
+div ~ p {
+  background-color: orangered;
+}
+This will set the background color of all <p> elements that are siblings of a <div> and come after it to orangered.
+
+div ~ .general {
+  background-color: gold;
+}
+Selects: All elements with class .general that are siblings of a <div> and come after it.
+
+

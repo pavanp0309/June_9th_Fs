@@ -1,0 +1,82 @@
+
+
+/* parent styles */
+.card{
+ border:2px solid red;
+ width: 250px;
+ background-color: gold;
+ /* padding-top: 20px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ padding-right: 10px; */
+ padding: 2px 5px; /* top& bottom 2.left & right */
+ padding: 2px 5px 4px; /* top  2.left & right 3.bottom */
+ padding: 2px 5px 4px 6px; /* top  2. right 3.bottom 4.left */
+ /* padding: 2px; */
+padding: 1.5rem;
+/* margin-top: 57px;
+margin-bottom: 20px;
+margin-left: 100px;
+margin-right: 100px; */
+margin: 4px;
+margin: 4px 6px;
+margin: 4px 6px 5px;
+margin: 4px 6px 5px 8px;
+margin: 2rem;
+/* Border_radius Property */
+/* border-radius: 10px; */
+border-top-left-radius:40px ;
+border-top-right-radius:50px ;
+border-bottom-right-radius:50px ;
+border-bottom-left-radius:50px ;
+border-radius: 10px;
+/* border-Properties */
+border-style: dashed;
+border-style: double;
+border-style: dotted;
+border-style: ridge;
+border-style: inset;
+/* border-style: outset; */
+border-width: 10px;
+border-color: rgb(119, 255, 0);
+border: none;
+border-bottom: 5px solid red;
+border-left: 5px solid green;
+border-right: 5px solid rgb(128, 0, 102);
+border-top: 5px solid rgb(15, 18, 244);
+border-top-style: double;
+border-bottom-style: dashed;
+border-left-style: dotted;
+border-top-color: aqua;
+box-shadow: 10px 15px 10px 5px blue;
+
+}
+
+
+/* child properties */
+/* child properties */
+.card-img-top{
+ width: 100%; /* Responsive Images*/
+ height: 150px;
+ /* border: 2px dotted green; */
+ /* padding-top: 10px;
+ padding-left: 10px;
+ padding-bottom: 10px;
+ padding-right: 10px; */
+}
+.card-body{
+
+}
+.card-title{
+
+}
+.card-price{
+
+}
+.btn{
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 3px 5px white;
+  
+}

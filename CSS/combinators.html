@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector (>) */
+        div>p{
+              color: red;
+        }
+        /* descendent selector ( space ) */
+        /* child+descendent */
+        div p{
+            color: green;
+        }
+        /* only descendent */
+         div .text{
+            color: rgb(0, 17, 128);
+        }
+       /* adjacent Sibiling Selector */
+       div+p{
+            background-color: aqua;
+        }
+        /* general sibiling selector */
+        /* adjacent +gerneral */
+        div~p{
+            background-color: orangered;
+        }
+        /* only general sibiling */
+        div~.general{
+            background-color: gold;
+        }
+    </style>-
+</head>
+<body>
+    <!-- combinators : describes the Realationship b/w selectors -->
+     <div class="parent" id="p"><!--parent Element-->
+       <p>Child Element-1 </p><!-- child element(child of div)-->
+       <p>Child Element-2 </p><!-- child element(child of div)-->
+       <section> <!-- child Selector (child of div)-->
+          <p> sub-child </p><!-- child of section and grand child of div---descendent -->
+          <p class="text"> sub-child </p><!-- child of section and grand child of div---descendent -->
+       </section>
+     </div>
+      <p>hello- i am sibiling</p><!-- Adjacent sibling selector (immediately followed) -->
+      <p>hello- i am sibiling</p><!-- general sibling selector -->
+      <b>General sibiling selector</b>
+      <p class="general">hello- i am sibiling</p><!-- general sibling selector -->
+</body>
+</html>

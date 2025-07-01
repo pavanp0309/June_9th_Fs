@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+        /* Universal selector */
+     *{
+         margin: 0;
+         font-family: cursive;
+     }
+
+     /* id_selector :#idvalue- */
+     #id1{ 
+        /* property:value; */
+        /* key:value; */
+        color: aqua;
+        background-color: red;
+        text-align: center;
+     }
+     #example{
+         background-color: gold;
+         text-transform: capitalize;
+         text-align: center;
+     }
+     /* class selector=> .classvalue{} */
+     .c1{
+       background-color: gold;
+     }
+     .c2{
+        text-align: center;
+     }
+
+     /* tag selector */
+     span{
+        background-color: orangered;
+        width: 200px;
+        display: block;
+     }
+     h4{
+        background-color: aquamarine;
+     }
+
+     /* Group selector */
+     /* Id:100 class-1 tag-0 */
+     h1,#group,.cg{
+        background-color: azure;
+        text-align: center;
+     }
+    #g1{
+        background-color: aquamarine;
+    }
+     .g{
+        background-color: rgb(170, 127, 255)!important;
+    }    
+    </style>
+</head>
+<body>
+             <i class="g" id="g1">Guess the answer</i>
+    <!-- selector::Its is pattern used for  selectng an Element for styling -->
+     <!-- simpleSelectors : id,class,tag/element,groupselector ,universal selector-->
+      <!-- id: should be unique in entire html Document -->
+      <h2 id="id1">simpleSelectors</h2>
+      <h3 id="example">simpleSelectors-1</h3>
+
+      <!-- class selector : Reuseablity,code maintainable ,easy to overide  -->
+       <p class="c1 c2">Class selector</p>
+        <h6 class="c2">Class selector</h6>
+
+       <!-- Tag selector/element selector -->
+        <span>Tag selector</span>
+        <h4>Hello I am learning css</h4>
+
+        <!-- Group_selector : combination of Multiple Selectors(id class tag/element) -->
+         <h1>Group_selector</h1>
+         <h5 id="group">Group_selector</h5>
+         <section class="cg">Group_selector</section>
+
+
+      
+
+</body>
+</html>

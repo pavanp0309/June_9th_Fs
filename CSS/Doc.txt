@@ -32,7 +32,7 @@ EG: width height src href name value id class  type
 SELECTOR: ITS IS PATTERN USED FOR SELECTING HTML ELEMENTS TO STYLE 
 TYPES OF SELECTOR 
 1.simple SELECTOR : ELEMENT /tag selector  id class Group selector Universal selector 
-2.COMBINATORS SELECTOR :(TALAKS ABOUT RELATIONSHIP SELECTOR)
+2.COMBINATORS SELECTOR :(TALKS ABOUT RELATIONSHIP SELECTOR)
           child SELECTOR 
           decendent selector
           adjancent sibiling selector 
@@ -52,3 +52,46 @@ selector{
   text-align:center;
   background-color:green; 
 }
+
+
+BOX_MODEL : it describes ABout The structuring of layout Like space ,Alignment boorder etc.. for The content
+
+Content : h1,img audio video div etc...
+padding: The space Around the Content inside the border 
+     padding-right
+     padding-left 
+     padding-bottom
+     padding-top
+border : a thick line around the padding 
+   border-style:solid dotted dashed grooved double riged inset outset etc..
+   border-color:color-value
+   border-width:px rem(16px)
+   border:border-width border-style   border-color
+   eg: border:2px dotted red;
+
+   border-top-style
+   border-top-color
+   border-top-width
+   border-top 
+
+   Border-bottom-style
+   Border-bottom-color
+   Border-bottom-width 
+   border-bottom
+
+   Border-right-style
+   Border-right-color 
+   Border-right-width
+   border-right 
+
+   Border-radius 
+   border-top-right-radius
+   border-top-left-radius
+   border-bottom-left-radius
+   border-bottom-right-radius
+
+Margin :the space around the Border (outside of the Border) 
+ Margin-top
+ Margin-bottom
+ Margin-left
+ Margin-right 

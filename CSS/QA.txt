@@ -5,3 +5,12 @@ DAY_1
 4.explain different types of selectors?
 5.explain different ways to add css to html ? and its imporatance 
 6.How does a class selector differ from an ID selector? When would you use each?
+
+
+Day_2
+7.What are simple selectors in CSS? Name them.
+8.What is the difference between an ID selector and a class selector?
+9.What is specificity?
+10.What are combinator selectors? Name the four types.
+11. Difference between descendant selector (A B) and child selector (A > B)?
+12.Difference between adjacent sibling selector (A + B)  and  general sibling selector (A ~ B)?
