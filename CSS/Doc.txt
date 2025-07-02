@@ -95,3 +95,6 @@ Margin :the space around the Border (outside of the Border)
  Margin-bottom
  Margin-left
  Margin-right 
+
+ Total width 
+ TOTAL height 

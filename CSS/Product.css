@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+}
+
+.product{
+  border: 2px solid red;
+  background-color: aquamarine;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  padding: 2px;
+}
+
+
+/* Default styles  */
+.product-img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+}
+.bi{
+   font-size: 1.2rem;
+   color: orangered;
+}
+
+.bi-apple{
+    color: green;
+}
+.product-2{
+    background-color: #ffd700;
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 4px  rgb(43, 14, 231); */
+}
+.product-title{
+   
+    padding: .2rem;
+}
+.text{
+    margin:0px 2.2rem;
+    text-transform: uppercase;
+    color: orangered;
+}
+.btn{
+     width: 220px;
+     padding: .5rem;
+     display: block;
+     margin: auto;
+     border-radius: 10px;
+     border: none;
+     outline: 2px solid red;
+     box-shadow: 4px 3px 5px white;
+     background-color: orangered;
+     color: white;
+     font-weight: bold;
+     text-transform: capitalize;
+}
+.product-details{
+    margin:5px 0px;
+    padding: 15px;
+    font-weight: bold;
+
+}

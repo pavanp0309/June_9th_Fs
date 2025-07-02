@@ -231,3 +231,49 @@ div ~ .general {
 Selects: All elements with class .general that are siblings of a <div> and come after it.
 
 
+DAY_2 OBJECTIVE
+
+🎯 BOX MODEL IN CSS
+
+The CSS Box Model is a fundamental concept that describes how elements are structured and spaced on a web page. Every element is considered as a rectangular box, consisting of the following parts (from inside out):
+
+1. Content: The actual content of the box, such as text, images, or other media.
+2. Padding: The space between the content and the border. It creates space inside the box, around the content.
+   - Properties: padding-top, padding-right, padding-bottom, padding-left, or shorthand: padding
+3. Border: A line that wraps around the padding and content. It can have different styles, widths, and colors.
+   - Properties: border-style (solid, dashed, dotted, double, groove, ridge, inset, outset, none)
+   - border-width, border-color, border-radius (for rounded corners)
+   - Individual sides: border-top, border-right, border-bottom, border-left
+   border-style (dotted dashed grooved  double solid riged inset outset non )
+         border-top-style 
+         border-bottom-style 
+         border-left-style 
+         border-right-style  
+  border-color :
+         border-top-color 
+         border-bottom-color
+         border-left-color
+         border-right-color  
+   border-width 
+         border-top-width 
+         border-bottom-width
+         border-left-width
+         border-right-width 
+   border-radius 
+       border-top-left-radius
+       border-top-right-radius
+       border-bottom-right-radius
+       border-bottom-left-radius
+4. Margin: The space outside the border, separating the element from other elements.
+   - Properties: margin-top, margin-right, margin-bottom, margin-left, or shorthand: margin
+
+📦 Box Model Formula:
+- Total Width = width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+- Total Height = height + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom
+
+🎯 Additional Box Model Concepts
+- box-sizing: Controls how the total width and height of an element are calculated.
+  - content-box (default): width/height includes only the content. Padding and border are added outside.
+  - border-box: width/height includes content, padding, and border (recommended for layouts).
+- overflow: Controls what happens if content overflows the box (visible, hidden, scroll, auto).
+

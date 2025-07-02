@@ -14,3 +14,10 @@ Day_2
 10.What are combinator selectors? Name the four types.
 11. Difference between descendant selector (A B) and child selector (A > B)?
 12.Difference between adjacent sibling selector (A + B)  and  general sibling selector (A ~ B)?
+
+DAY_3
+13.What is the CSS box model? Explain its components.
+14.What is the difference between padding and margin?
+15.What does box-sizing do? Difference between content-box and border-box.
+16. Explain difference between outline and border in box model?
+17.explain How to calculate The Total width and height of the Box?
