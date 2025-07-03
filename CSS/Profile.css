@@ -1,0 +1,15 @@
+.profile{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: aquamarine;
+    margin: 100px auto;
+
+}
+.profile_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin:-30px auto;
+}

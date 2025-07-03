@@ -21,3 +21,10 @@ DAY_3
 15.What does box-sizing do? Difference between content-box and border-box.
 16. Explain difference between outline and border in box model?
 17.explain How to calculate The Total width and height of the Box?
+
+Day_4 
+18.Explain the difference between block, inline, and inline-block properties
+19What is box-shadow? How to apply it?
+20.What happens if you set a negative margin? 
+21.What is border-radius? How to create a circle with it?
+22.What is display: none vs visibility: hidden?

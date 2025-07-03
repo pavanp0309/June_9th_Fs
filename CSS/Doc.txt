@@ -98,3 +98,37 @@ Margin :the space around the Border (outside of the Border)
 
  Total width 
  TOTAL height 
+
+
+ position Properties  are used  aligning items at certain position in the Document flow
+
+
+REALTIME EXAMPLeS
+ Product Card  -displaying the Offers
+ Sticky Navbars 
+ DropDowns 
+ chatbot attached to corner
+ searchbar with Icons  
+ Cart icons etc ...
+
+ Different types of position Properties
+ 1.position:static (default) : every Html element be deafult has static poition 
+ 1.position:Relative
+  moves form Root of the Document if there is non ancester /sibiling element is the Document
+  if there is an  element it moves from the nearest element
+ 1.position:absolute
+  always comes out of normal document flow and moves from root of document until we apply its parent with position like realtive absolute afixed
+ 1.position:fixed 
+ 1.position:Sticky
+
+
+To move The Html ELMEnts we use Top bottom left and right 
+
+
+
+
+
+
+
+
+
