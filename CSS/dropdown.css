@@ -31,3 +31,58 @@
 .profile:hover .dropdown{
   display: block;
 }
+
+
+/* subdropdown start */
+.subdropdown{
+ position: relative;
+}
+
+.sundropdown-menu{
+ background-color: gold;
+ border-radius: 10px;
+ width: 90px;
+ position: absolute;
+ left:100px;
+ top:10px;
+ display: none;
+
+}
+
+.subdropdown:hover .sundropdown-menu {
+  display: block;
+}
+
+
+.subdropdown_2{
+  position: relative;
+}
+
+.sudrowdown_menu_2{
+  background-color: rgb(23, 212, 219);
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  display: none;
+}
+.subdropdown_2:hover .sudrowdown_menu_2{
+  display: block;
+}
+
+.nestedDropdown{
+  position: relative;
+}
+.nested_dropdownmenu{
+    background-color: rgb(213, 219, 23);
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  left: 80px;
+  top:10px;
+  display: none;
+}
+.nestedDropdown:hover .nested_dropdownmenu{
+ display: block;
+}

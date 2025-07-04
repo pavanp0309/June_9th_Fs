@@ -8,8 +8,14 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
      <!-- external css -->
       <link rel="stylesheet" href="dropdown.css">
+      <!-- <style>
+        .r{
+          transform: rotate(90deg);
+        }
+      </style> -->
 </head>
 <body>
+  <!-- <img src="./assets/1.jpg" alt="" width="100px" class="r"> -->
     <!-- parent Element -->
     <div class="profile">
       <img src="./assets/1.jpg" alt="" class="profile-img">
@@ -18,8 +24,32 @@
         <!-- dropdown_menu start -->
          <a href="" class="nav-link"><i class="bi bi-person"></i>Profile</a>
          <a href="" class="nav-link"><i class="bi bi-pencil"></i>Editprofile</a>
-         <a href="" class="nav-link"><i class="bi bi-person-gear"></i>Switchuser</a>
          <a href="" class="nav-link"><i class="bi bi-box-arrow-right"></i>Logout</a>
+         <div class="subdropdown"> <!-- parent for subdropdown-->
+           <a href="" class="nav-link"><i class="bi bi-person-gear"></i>Switchuser</a>
+           <div class="sundropdown-menu">
+             <a href="" class="nav-link"><i class="bi bi-Person"></i>User1</a>
+             <a href="" class="nav-link"><i class="bi bi-Person"></i>User2</a>
+             <!-- subdropdown2 start -->
+             <div class="subdropdown_2">
+               <a href="" class="nav-link"><i class="bi bi-Person"></i>User2</a>
+               <!-- subdropdown_menu starts -->
+               <div class="sudrowdown_menu_2">
+                 <a href="" class="nav-link"><i class="bi bi-pencil"></i>Editprofile</a>
+                 <div class="nestedDropdown">
+                   <a href="" class="nav-link"><i class="bi bi-person"></i>Profile</a>
+                   <div class="nested_dropdownmenu">
+                      <a href="" class="nav-link"><i class="bi bi-box-arrow-right"></i>Logout</a>
+                   </div>
+
+                 </div>
+              
+               </div>
+
+             </div>
+           </div>
+
+         </div>
        </div>
 
     </div>
