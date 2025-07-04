@@ -1,0 +1,33 @@
+.profile{
+  position: relative;
+}
+
+.profile-img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.nav-link{
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-link:hover{
+ color: orangered;
+}
+
+.dropdown{
+    background-color: rgb(127, 255, 174);
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    top:17px;
+    left: 27px;
+    display: none;
+}
+
+.profile:hover .dropdown{
+  display: block;
+}

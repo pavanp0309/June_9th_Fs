@@ -277,3 +277,45 @@ The CSS Box Model is a fundamental concept that describes how elements are struc
   - border-box: width/height includes content, padding, and border (recommended for layouts).
 - overflow: Controls what happens if content overflows the box (visible, hidden, scroll, auto).
 
+
+DAY_3
+
+Position Properties
+ every element in a document flow from left to right  and top to bottom to override these we use position properties 
+
+ position prop are used for layouting overlapping  ,alignment  etc  in the documnet 
+
+ we use (Top left right bottom)-offset values  are used for alignment /positioning the element 
+
+ Types of Position Properties 
+ 1.static (default)
+     it has normal document flow(left-right top-bottom)
+     offset values like top left bottom right has no effects on position static 
+     zindex propertyy doesnt work on position static
+
+ 2.realtive
+    it also fallows the normal document flow 
+    when applied with offset values like top bottom left and right elememt can moved here 
+    position realitive moves to the previous element if there is no previous element it moves realtive to the root element(html)
+ 3.absolute
+      it comes out of normal documnet flow 
+      and moves the element from root(html) until unless its parent element is applied with position like realtive absolute fixed
+ 4.fixed  :
+      it comes out of normal documnet flow 
+      and element gets fixed even when the content in webpage is scrolled
+ 5.sticky
+       it comes out of normal documnet flow  and behaves like realtive and fixed
+
+z-index
+Controls the stacking order.
+Only works on positioned elements (relative, absolute, fixed, sticky).
+
+
+Real-world use cases summary:
+
+😎 Dropdowns, tooltips, modals/popups: usually absolute inside a relative parent.
+😎 Sticky navbar: position: sticky; top: 0;.
+😎 Floating buttons: position: fixed; bottom: 20px; right: 20px;.
+😎 Form fields with icons inside: relative parent + absolute icon.
+😎 Fixed footer/header: position: fixed; bottom: 0; width: 100%;.
+😎 Blog sidebars: sticky to stay visible while scrolling content.

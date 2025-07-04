@@ -28,3 +28,9 @@ Day_4
 20.What happens if you set a negative margin? 
 21.What is border-radius? How to create a circle with it?
 22.What is display: none vs visibility: hidden?
+
+
+DAY_5
+23.Explain the difference between position: relative and position: absolute.
+24. What is the stacking context? How does z-index work with positioned elements?
+25.What is the difference between position: fixed and sticky?
