@@ -1,0 +1,26 @@
+/* types of colors */
+/* defalut colors:red green blue oranged etc... */
+/* rgb:red(0-255) green(0-255) blue(0-255)  */
+/* rgba:red green blue alpha(0-1(0.9999)  */
+/* hexa:00(0-9)-ff(a-f)-(255)---->#colorcode; */
+/* hsl : hue(0-360deg) staturation(0-100%) lightness(0-100%) */
+/* hsla : hue(0-360deg) staturation(0-100%) lightness(0-100%) alpha */
+/* linear gradient ,radial-gradient and conic-gradient: works only with bg-image/background */
+
+h1{
+    color: royalblue;
+    color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    color: rgb(255,0,0);
+    color: rgb(0,255,0);
+    color: rgb(0,0,255);
+    color:rgba(232, 115, 12, 0.974);
+    color: #000000;
+    color: #000;
+    color: #ffffff;
+    color: #ec1621;
+    color: hsla(0, 90%, 47%, 0.548);
+    color: rgba(85, 239, 196,1.0);
+    color: #e84393;
+    
+}

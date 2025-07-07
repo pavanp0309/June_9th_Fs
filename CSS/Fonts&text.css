@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playwrite+HU:wght@100..400&display=swap');
+body{
+    font-style: italic;
+}
+p{
+    font-family:serif ;/* has strokes at edges*/
+    font-family:sans-serif ;  /*no strokes at edges */
+    font-family:monospace ;
+    font-family: cursive;
+    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; /*1em=16px*/;
+    font-size: 2em; /*1em=16px*/;
+    font-weight: 500;
+    font-weight: bold;
+    font-weight: bolder;
+    font-style:inherit;
+    font-style:initial;
+    font-variant: small-caps;
+    font-variant:normal;
+    font: 1em sans-serif bold ; /* Shorthand */
+
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+h4{
+    text-align:start ;
+    text-align:end ;
+    text-align:center ;
+    text-decoration-line:underline ;
+    text-decoration-line:overline ;
+    /* text-decoration-line:line-through ; */
+    text-decoration-style:dashed ;
+    text-decoration-style:double ;
+    text-decoration-thickness:4px ;
+    text-decoration-color:blue;
+    text-decoration: underline red 2px dotted;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform:capitalize;
+  
+}
+p{
+    text-indent: 30px;
+    line-height: 2em;
+    letter-spacing:10px ;
+    word-spacing: 20px;
+    text-shadow: 2px 2px 5px red;
+}

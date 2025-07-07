@@ -34,3 +34,11 @@ DAY_5
 23.Explain the difference between position: relative and position: absolute.
 24. What is the stacking context? How does z-index work with positioned elements?
 25.What is the difference between position: fixed and sticky?
+
+Day_6
+26.What is the difference between font-style and font-variant?
+27. How does font-size: 2em differ from font-size: 2rem?
+28.What is the difference between letter-spacing and word-spacing?
+29.How does text-shadow work? Can you give an example?
+30.explain different types of colors  in css ?
+

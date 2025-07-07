@@ -1,0 +1,5 @@
+1.what are meta tags in html?
+2.write the Difference b/w semantic and non-semantic 
+3.what are attributes 
+4.what are selector? explain difference b/w id and class.
+5.explain the difference b/w position absolute and relative 
