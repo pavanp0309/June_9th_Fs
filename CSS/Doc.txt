@@ -125,6 +125,55 @@ REALTIME EXAMPLeS
 To move The Html ELMEnts we use Top bottom left and right 
 
 
+DAY_5
+FLEX_BOX 
+
+Definition:
+Flexbox (Flexible Box Layout) is a CSS layout model for arranging elements in a single dimension—either as a row or a column. 
+It makes it easy to align, distribute, and order space among items, even when their size is unknown or dynamic.
+
+REALTIME USECASES 
+Card layouts (service cards, product cards, profile cards)
+Navigation bars and footers
+Hero sections
+Image galleries
+Web layouts and dashboards
+Form layouts
+
+Key Benefits:
+Custom ordering of elements
+Vertical and horizontal centering
+Responsive design with minimal code
+
+
+FLEX_BOX PARENT PROPERTIES
+display:flex
+
+display: flex; // Enables flexbox on the container
+flex-direction: row (default) | row-reverse | column | column-reverse
+flex-wrap: wrap | nowrap (default)
+flex-flow: flex-direction flex-wrap (shorthand)
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+(Aligns items along the main axis)
+align-items: flex-start | flex-end | center | stretch | baseline
+(Aligns items along the cross axis)
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+(Aligns multiple lines; works only with flex-wrap: wrap)
+
+Note:
+
+When flex-direction is row, justify-content works horizontally and align-items works vertically.
+When flex-direction is column, justify-content works vertically and align-items works horizontally.
+
+FLEX_BOX Child PROPERTIES
+
+order: Controls the order of items (default is 0)
+align-self: Overrides align-items for a single item
+flex-grow: Defines how much a flex item will grow relative to the rest
+flex-shrink: Defines how much a flex item will shrink if needed
+flex-basis: Sets the initial main size of a flex item
+flex: flex-grow |flex-shrink |flex-basis (shorthand)
+
 
 
 

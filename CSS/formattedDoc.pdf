@@ -319,3 +319,164 @@ Real-world use cases summary:
 😎 Form fields with icons inside: relative parent + absolute icon.
 😎 Fixed footer/header: position: fixed; bottom: 0; width: 100%;.
 😎 Blog sidebars: sticky to stay visible while scrolling content.
+
+
+DAY_4
+Day_4
+colors
+text_properties
+FontProperties 
+
+-----------------------------
+COLORS IN CSS
+-----------------------------
+CSS provides multiple ways to specify colors for text, backgrounds, borders, and other elements. Understanding these options helps you create visually appealing and accessible designs.
+
+1. Named Colors
+   - Use standard color names like red, blue, green, orange, pink, etc.
+   - Example: color: orangered;
+
+2. RGB and RGBA
+   - RGB: Uses Red, Green, Blue values (0-255).
+     Example: color: rgb(255, 0, 0); // red
+   - RGBA: Adds Alpha (opacity, 0-1).
+     Example: color: rgba(255, 0, 0, 0.5); // semi-transparent red
+
+3. HEX Colors
+   - Uses hexadecimal values (#RRGGBB or #RGB).
+   - Example: color: #ff0000; // red
+
+4. HSL and HSLA
+   - HSL: Hue (0-360), Saturation (0-100%), Lightness (0-100%).
+     Example: color: hsl(120, 100%, 50%); // green
+   - HSLA: Adds Alpha (opacity).
+     Example: color: hsla(120, 100%, 50%, 0.3);
+
+5. CSS Color Functions (Advanced)
+   - color-mix(): Mixes two colors.
+     Example: color: color-mix(in srgb, red 60%, blue 40%);
+   - color-contrast(): Ensures accessible contrast (browser support limited).
+
+6. Transparency
+   - Use rgba(), hsla(), or the opacity property.
+   - Example: opacity: 0.7; (applies to the whole element)
+
+Best Practices:
+- Use high-contrast color combinations for accessibility.
+- Prefer CSS variables for theme consistency.
+- Test colors on different devices and backgrounds.
+
+-----------------------------
+TEXT PROPERTIES
+-----------------------------
+CSS text properties control the appearance, alignment, spacing, and decoration of text.
+
+1. color: Sets the text color.
+2. text-align: left | right | center | justify
+   - Aligns text horizontally within its container.
+3. text-transform: none | uppercase | lowercase | capitalize
+   - Controls letter casing.
+4. text-decoration: underline | overline | line-through | none
+   - Adds lines to text (e.g., links).
+5. text-shadow: Adds shadow to text.
+   - Example: text-shadow: 2px 2px 4px #888;
+6. letter-spacing: Adjusts space between letters.
+7. word-spacing: Adjusts space between words.
+8. line-height: Controls vertical spacing between lines.
+9. text-indent: Indents the first line of text.
+10. direction: ltr | rtl (left-to-right or right-to-left text)
+
+Example:
+.headline {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+-----------------------------
+FONT PROPERTIES
+-----------------------------
+Font properties define the typeface, size, style, and weight of text.
+
+1. font-family: Specifies the font(s) to use.
+   - Example: font-family: 'Roboto', Arial, sans-serif;
+2. font-size: Sets the size of the font (px, em, rem, %, etc.).
+   - Example: font-size: 18px;
+3. font-weight: normal | bold | 100-900
+   - Example: font-weight: 700;
+4. font-style: normal | italic | oblique
+   - Example: font-style: italic;
+5. font-variant: normal | small-caps
+   - Example: font-variant: small-caps;
+6. font-stretch: normal | condensed | expanded
+7. font-feature-settings: Advanced typographic features (ligatures, etc.)
+8. @font-face: Import custom fonts.
+   - Example:
+     @font-face {
+       font-family: 'MyFont';
+       src: url('myfont.woff2') format('woff2');
+     }
+
+Shorthand:
+font: style weight size/line-height family;
+Example: font: italic bold 16px/1.5 'Roboto', sans-serif;
+
+
+
+
+DAY_5
+FLEX_BOX 
+
+Definition:
+Flexbox (Flexible Box Layout) is a CSS layout model for arranging elements in a single dimension—either as a row or a column. 
+It makes it easy to align, distribute, and order space among items, even when their size is unknown or dynamic.
+
+When to Use Flexbox? (Real-world Use Cases)
+Card layouts (service cards, product cards, profile cards)
+Navigation bars and footers
+Hero sections
+Image galleries
+Web layouts and dashboards
+Form layouts
+
+Key Benefits:
+Custom ordering of elements
+Vertical and horizontal centering
+Responsive design with minimal code
+
+
+FLEX_BOX PARENT PROPERTIES
+display:flex
+
+display: flex; // Enables flexbox on the container
+flex-direction: row (default) | row-reverse | column | column-reverse
+flex-wrap: wrap | nowrap (default)
+flex-flow: flex-direction flex-wrap (shorthand)
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+(Aligns items along the main axis)
+align-items: flex-start | flex-end | center | stretch | baseline
+(Aligns items along the cross axis)
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+(Aligns multiple lines; works only with flex-wrap: wrap)
+
+Note:
+
+When flex-direction is row, justify-content works horizontally and align-items works vertically.
+When flex-direction is column, justify-content works vertically and align-items works horizontally.
+
+FLEX_BOX Child PROPERTIES
+
+order: Controls the order of items (default is 0)
+align-self: Overrides align-items for a single item
+flex-grow: Defines how much a flex item will grow relative to the rest
+flex-shrink: Defines how much a flex item will shrink if needed
+flex-basis: Sets the initial main size of a flex item
+flex: flex-grow |flex-shrink |flex-basis (shorthand)
+
+
+
+
+
+
+

@@ -42,3 +42,12 @@ Day_6
 29.How does text-shadow work? Can you give an example?
 30.explain different types of colors  in css ?
 
+Day_7
+31.What is Flexbox? Why would you use it over traditional float or inline-block layouts?
+32.How does justify-content differ from align-items in a flex container?
+33.Describe the difference between align-items and align-content. When does align-content have an effect?
+34.How do flex-grow, flex-shrink, and flex-basis affect the sizing of flex items?
+35.What happens if you set min-width or max-width on flex items?
+36.Can you nest flex containers? What are some caveats?
+37.How would you vertically and horizontally center a div using Flexbox?
+38.What is the effect of flex-wrap: wrap on a flex container?

@@ -1,0 +1,54 @@
+
+/* parent Properties */
+.skills{
+    height: 100vh;
+ display: flex;
+ /* flex-direction: column-reverse; */
+ /* flex-direction: column; */
+ /* flex-wrap: nowrap;default */
+ /* flex-wrap: wrap;responsive */
+ /* flex-flow: row wrap; */
+ /* flex-wrap: wrap-reverse;responsive */
+ /* justify-content: center; */
+ /* note: justify-content works in horizontal -> row  and works in vertical direction when fd: column */
+ justify-content:center; /* start center end  space-between space-around space-evenly baseline */
+ /* align-items:start ; start center end */
+ align-content: center; /*start center end  space-between space-around space-evenly baseline */
+ /* align-content : works only when we apply flex-wrap: wrap */
+}
+
+/* child common Properties */
+/* block level : occupies full width and starts in new line + we can apply width and height and padding all sides */
+.skill-card{
+ background-color: aqua;
+ width: 150px;
+ height: 100px;
+ text-align: center;
+ border: 1px solid black;
+ border-radius: 10px;
+ box-shadow: 3px 4px 5px rgb(138, 212, 218);
+
+}
+
+
+/* child  Properties */
+.skill-1{
+    /* flex-grow: 2; */
+        /* flex-shrink: 2; */
+        flex-basis: 200px; /*width */
+        /* width: 300px; */
+        min-width:300px ; /*start point */
+
+   order: 2;
+   background-color: orangered;
+   background-color: rgb(0, 13, 255);
+}
+.skill-2{
+    align-self:flex-end;
+}
+.skill-3{}
+.skill-4{
+    color: white;
+    order: 2;
+    background-color: green;
+}
