@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+.courses{
+ height: 100vh;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.course-card{
+  width: 150px;
+  height: 150px;
+  background-color: azure;
+  border: 1px solid green;
+  padding:1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: all .5s linear;
+}
+
+.bi{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.course-card h3{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 5px 0px;
+}
+.course-card p{
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.course-card-1:hover{
+   transform: translateY(-10px) rotate(-5deg) scale(1.2);
+   box-shadow: 0px 0px 30px rgb(67, 49, 201);
+}
+
+.course-card-2:hover{
+    border: 2px solid orangered;
+    transform: rotate(45deg) translateY(-15px);
+}

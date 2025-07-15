@@ -475,6 +475,119 @@ flex-basis: Sets the initial main size of a flex item
 flex: flex-grow |flex-shrink |flex-basis (shorthand)
 
 
+Transitions : 
+Transitions allow you to smoothly change property values over a specified duration, usually in response to user actions like hover.
+
+transition-property: The property to animate (e.g., background, all)
+transition-duration: How long the transition takes (e.g., 2s)
+transition-delay: Wait time before the transition starts
+transition-timing-function: The speed curve (linear, ease, ease-in, ease-out, cubic-bezier)
+transition: Shorthand for all the above
+
+Note: transitions works only with Pseudo-class  called hover 
+     transition moves from Intial state to final state 
+     when mouse hovered it moves in forward direction and mouse is left it moves in backword 
+     -no intermediate steps
+     - it runs only once 
+     -- we can only create simple change
+
+example
+.button {
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background: orange;
+}
+
+
+Animations
+Animations allow you to create more complex, multi-step changes that can run automatically or loop infinitely, using @keyframe
+
+-- runs without Hover with help of @keyframes  
+-- it has intermediate steps
+-- it can infinte no -of times with property called Animation-iteration-count 
+- it difficult to use the js & best creating complex changes 
+
+
+Animation Properties 
+animation-name: Name of the keyframes
+animation-duration: How long one cycle takes
+animation-delay: Wait time before animation starts
+animation-timing-function: Speed curve
+animation-iteration-count: Number of times to repeat (infinite for endless)
+animation-fill-mode: Defines what styles are applied before/after animation
+animation-direction: Direction of animation (normal, reverse, alternate, etc.)
+
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.box {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes name-of Animation {
+  0%{
+
+  }20%{
+    
+  }50%{
+
+  }100%{
+    
+  }
+}
+
+
+TRANSFORMATIONS
+Definition:
+CSS Transformations allow you to visually manipulate elements by rotating, scaling, skewing, or translating them in 2D or 3D space without affecting the normal document flow.
+
+Transform Functions:
+
+translate(x, y): Moves the element along the X and/or Y axis.
+Example: transform: translate(50px, 20px);
+scale(x, y): Scales the element’s width and/or height.
+Example: transform: scale(1.5, 0.5);
+rotate(angle): Rotates the element clockwise by a given angle.
+Example: transform: rotate(45deg);
+skew(x-angle, y-angle): Skews the element along the X and/or Y axis.
+Example: transform: skew(20deg, 10deg);
+matrix(a, b, c, d, e, f): A combination of all 2D transform functions in one.
+
+3D Transform Functions:
+rotateX(angle), rotateY(angle), rotateZ(angle)
+scaleZ(z), translateZ(z)
+perspective(n): Adds perspective to a 3D transformed element.
+
+Usage Example:
+.box {
+  transform: rotate(15deg) scale(1.2) translateX(30px);
+}
+
+Transform Origin:
+The point around which a transformation is applied.
+Default is the center of the element.
+Example: transform-origin: top left;
+
+Transform Style:
+For 3D transforms, use transform-style: preserve-3d; to maintain 3D positioning of child elements.
+
+
+Real-World Use Cases:
+Rotating icons or images on hover
+Scaling buttons for interactive effects
+Creating flip cards or 3D effects
+Animating elements in combination with transitions or keyframes
+You can add this section after your Animations notes for a complete CSS effects chapter! Let me know if you want code samples or assignments for practice.
+
+
+
 
 
 

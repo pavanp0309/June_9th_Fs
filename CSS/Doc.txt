@@ -181,3 +181,20 @@ flex: flex-grow |flex-shrink |flex-basis (shorthand)
 
 
 
+
+Transitions : it is used for changing/animat the css Properties gradually over perid of time 
+
+ Transitions works only with Hover (PSEUDO_CLASS) selector :hover
+ Transitions from INTial state to final state 
+
+
+ Transition-property : property-name   | all 
+ transition-duration : 2s  ||  2ms
+ transition-delay : 2s  ||  2ms 
+ transition-timing-functions: ease |ease-in | ease-out | ease-in-out |linear 
+ transition :shorthand property
+
+
+ transformation (2d) : it is way to change the Apperance or positions of elements 
+
+  scale(zoom effect) ,Rotate , skew (slant position),translate (move either in x or y directions)

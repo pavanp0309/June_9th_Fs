@@ -52,4 +52,24 @@ Day_7
 37.How would you vertically and horizontally center a div using Flexbox?
 38.What is the effect of flex-wrap: wrap on a flex container?
 
+Day_8
+39.What is a CSS transition and how does it work?
+40.What is the difference between a transition and an animation in CSS?
+41.What is the purpose of the transition-timing-function property?
+42.What is a CSS transformation? List some common transform functions?
+43.What is the transform-origin property and why is it useful?
+44.Give a real-world example where you would use a transition, a transformation, and an animation.
+45.What is the difference between a transition and an transform in CSS?
+
+day_8 Practical
+Create any interactive  component (e.g., a product card, profile card, or “magic box”) that:
+
+Changes its shape, size, color, and rotation on hover
+
+Uses at least four different transform functions
+
+Uses all main transition properties to control how it animates
+
+You can choose any theme: card, button, logo, etc.
+Make sure the transition looks smooth and visually appealing.
 
