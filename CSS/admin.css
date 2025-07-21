@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* layout styles starts here */
+.layout{
+   display: grid; 
+   height: 100vh;
+   grid-template-columns: 300px 1fr;
+   grid-template-rows: 10vh 80vh 10vh;
+   grid-template-areas:
+   "s h"
+   "s m"
+   "s f"
+   ;
+}
+
+.layout_content{
+    background-color: rgba(23, 111, 80, 0.866);
+    color: white;
+    border: 2px solid red;
+    padding: 1.5rem;
+}
+.header{
+   grid-area: h;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.aside{
+    grid-area: s;
+}
+.main{
+    grid-area: m;
+}
+.footer{
+    grid-area: f;
+}
+
+
+/* header styles */
+
+.profile_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.wel_msg{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile input{
+  display: inline-block;
+  padding: .5rem;
+  outline: none;
+  border:1px solid gold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.profile .bi{
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: white;
+    color: gold;
+    border-radius: 50%;
+    margin:0px 5px;
+}
+
+/* main_section */
+.info_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 8px;
+}
+.info_card{
+    background-color: gold;
+    padding: 1.2rem;
+}   
+.charts{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:200px;
+    gap: 8px;
+}
+.chart_card{
+    background-color: gold;
+}
+.chart_card_1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.chart_card_2 {
+    grid-row: 1/2;
+}
+        

@@ -1,0 +1,29 @@
+
+
+
+.layout{
+ display: grid;
+ grid-template-columns: 200px 1fr;
+ height: 100vh;
+ grid-template-rows: 20% 80%;
+ grid-template-areas: 
+ "h h"
+ "a m";
+}
+
+.child{
+ background-color: gold;
+ padding: 2rem;
+ border: 1px solid red;
+ text-align: center;
+}
+
+.navbar{
+ grid-area: h;
+}
+.aside{
+grid-area: a;
+}
+.main{
+grid-area: m;
+}
