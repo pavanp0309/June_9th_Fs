@@ -182,6 +182,7 @@ flex: flex-grow |flex-shrink |flex-basis (shorthand)
 
 
 
+
 Transitions : it is used for changing/animat the css Properties gradually over perid of time 
 
  Transitions works only with Hover (PSEUDO_CLASS) selector :hover
@@ -229,3 +230,28 @@ Transitions : it is used for changing/animat the css Properties gradually over p
        /* justify-self: center;
     align-self: center; */
     place-self: center;
+
+
+
+
+RWD (Responsive web design)(adaptable Different screen)
+
+
+MIN_WiDTH:start point 
+MAX_WIDTH:ENding point
+
+
+BREAKPOINTS:
+sm:small screen 576px
+md:medium screen 726px
+lg:large screen 976px 
+xl:xtra larger screen  1200px
+xxl:xtra xtra large screen 1400px
+
+
+Media_Queries 
+@media mediatype and (min-width:px) and (max-width:px){
+  selector{
+    
+  }
+}
