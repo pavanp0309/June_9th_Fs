@@ -6,7 +6,7 @@
 }
 html, body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a {
   text-decoration: none;
@@ -180,7 +180,7 @@ li {
   width: 8px;
 }
 .main::-webkit-scrollbar-thumb {
-  background-color: #aaa;
+  background-color: #d81313;
   border-radius: 6px;
 }
 

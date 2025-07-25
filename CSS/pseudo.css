@@ -1,0 +1,77 @@
+:root{
+    --primary-color:rgb(19, 248, 145);
+    --secondary-color:pink;
+    --nadha-color:rgb(0, 255, 13);
+    --bg-warning:rgb(255, 94, 0);
+    --font-size:1rem;
+}
+
+a:link{
+    color: rgb(60, 255, 0);/* default  blue color */
+}
+a:visited{
+    color: cyan;
+}
+a:hover{
+    color: orangered;
+}
+a:active{
+    color: green;
+}
+
+#userinfo{
+    border: 2px solid red;
+    border-collapse:collapse ;
+}
+/* tr:nth-child(even){
+  background-color: orangered;
+} */
+tr:nth-child(odd){
+  background-color:var(--primary-color);
+}
+td:nth-child(even){
+  background-color:var(--secondary-color);
+  font-size: var(--font-size);
+}
+
+li:nth-child(3n+1){
+    color: var(--bg-warning);
+    background: var(--primary-color);
+}
+li:last-child{
+    color: var(--secondary-color);
+    
+}
+li:first-child{
+    color: var(--nadha-color);
+}
+.text-bg-primary{
+    color: var(--nadha-color);
+}
+input:required{
+    border: 2px solid red;
+}
+input:focus{
+    padding: 10px;
+    transition: all .5s linear;
+    box-shadow: 0px 0px 20px orangered;
+}
+input:disabled{
+    background-color: rgb(174, 179, 178);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* input:in-range{
+    background-color: orangered;
+} */
+/* input:out-of-range{
+    background-color: rgb(72, 255, 0);
+} */
+ input:checked+label{
+    /* border: 2px solid red; */
+    font-weight: bold;
+ }
+
+  :is(p,h1){
+    background-color: orangered;
+ }

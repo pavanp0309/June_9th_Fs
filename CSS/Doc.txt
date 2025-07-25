@@ -255,3 +255,16 @@ Media_Queries
     
   }
 }
+
+
+PSEUDO_ELEMENTS : are used for selecting the specific parts of an element
+PSEUDO : imaganiary state 
+-first-letter 
+-first-line 
+-selection 
+-marker 
+-placeholder
+-after 
+-before
+
+syntax: ::PSEUDO_ELEMENTS

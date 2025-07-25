@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       p::first-letter{
+         text-transform:uppercase ;
+         font-size: 2rem;
+         color: red;
+       }
+       p::first-line{
+        text-decoration: underline;
+        background-color: aqua;
+       }
+      h1::selection{
+        background-color: orangered;
+      }
+      p::selection{
+        color: gold;
+        background-color: green;
+      }
+      li{
+       list-style-type: none;
+      }
+   li::marker{
+     /* content: "🍗 "; */
+   }
+   input::placeholder{
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+   }
+
+   /* ::before and ::after  */
+   h1::before{ 
+     content: "start ";
+
+   }
+   h1::after{ 
+     content: " end ";
+
+   }
+
+
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="enter ur name">
+    <h1>Pseudo Elements</h1>
+    <p>hii good morning everyone</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo impedit ea dolorem ipsa quisquam deserunt fugit. Ipsum, placeat officiis! Rerum blanditiis at reiciendis neque non? Repudiandae modi pariatur ex.</p>
+     <!-- defualt symbol is disc -->
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+     </ul>
+</body>
+</html>
