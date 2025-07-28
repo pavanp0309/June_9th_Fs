@@ -1,0 +1,54 @@
+
+WHY BOOTSTRAP 
+1.it easy the build the application (prototype to production) with in lesstime  
+2.responsive application (mobile first design is your goal)
+3. pre-built components(navbar ,modelbox,accordion,carsoules(sliders)etc..)
+4.its is included javascript plugin(apps to live adding the functionality)
+
+WHat is BOOTSTRAP
+css framework (predefined structure it class based )
+
+Colors 
+text-color_name
+text-primary
+text-secondary
+text-warning
+text-danger
+text-success
+text-info
+text-white
+text-dark
+text-body-teritary
+text-lead
+
+background
+bg-color_name
+bg-primary
+bg-secondary
+bg-warning
+bg-success
+bg-danger
+bg-info
+bg-white 
+bg-dark
+bg-body-teritary
+
+
+Box_model 
+for direction  : s:start e:end x-left&right t:top b:bottom y:top&bottom  
+        the range : 0-5
+content
+padding :p ==> ps py px pe pt pb    pt-2 px-5 p-4
+margin : m ==> ms me mx mt mb my m-2
+border : border boder-color_name border-top 
+border-radius : rounded rounded-circle rounded-pill  rounded-0-5
+  box_shadow: shadow shadow-lg
+
+class="h1"
+
+breakpoints
+sm:576px
+md:726px
+lg :996px
+xl :1200px
+xxl:1400px
