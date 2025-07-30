@@ -12,18 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* === NAVBAR BRAND === */
-.navbar-brand {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #212529;
-}
-
-.navbar-brand span {
-  color: #28a745;
-}
 
 /* === NAVBAR LINKS === */
 .nav-link {
@@ -33,30 +21,33 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover {
   color: #28a745 !important;
   transform: translateY(-2px);
   font-weight: 600;
 }
 
-/* === BOOK CTA BUTTON === */
-.btn-success {
+
+/* footer styles */
+.footer-social-icons .bi{
+  transition: all .5s linear;
+}
+
+.footer-social-icons .bi:hover{
   background-color: #28a745;
-  border-color: #28a745;
-  transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
-.btn-success:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-}
 
-.hero-section {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  background-size: 24px 24px;
-  background-color: #f8f9fa;
-  position: relative;
-  z-index: 1;
+.service-img{
+  width: 100px;
+  height: 100px;
+}
+.service-card{
+  transition: all .10s linear;
+}
+.service-card:hover{
+  border-bottom: 2px solid black;
+  transform: translatey(-5px) rotate(3deg);
+  box-shadow:0px 0px 20px rgb(80, 120, 80) !important;
 }
