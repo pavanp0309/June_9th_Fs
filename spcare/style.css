@@ -1,19 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* default styles */
-
-
-/* navbar styles */
-.nav-link{
-    transition: all .8s ease-in-out;
+/* === BODY + FONT === */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #212529;
+  line-height: 1.6;
 }
-.nav-link:hover{
-    color: green;
-    font-weight: 500;
-    /* text-decoration: underline; */
-    transform: translateY(-3px);
+
+/* === NAVBAR BRAND === */
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #212529;
+}
+
+.navbar-brand span {
+  color: #28a745;
+}
+
+/* === NAVBAR LINKS === */
+.nav-link {
+  color: #212529 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #28a745 !important;
+  transform: translateY(-2px);
+  font-weight: 600;
+}
+
+/* === BOOK CTA BUTTON === */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.hero-section {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 1;
 }
