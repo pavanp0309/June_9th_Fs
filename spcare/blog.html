@@ -65,7 +65,103 @@
   </nav>
  <!-- header_section end -->
 
+<!-- model Box start -->
 
+<!-- modelButton start -->
+ <button class="btn btn-outline-success d-block position-fixed model_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">CallUsNow</button>
+<!-- modelButton end -->
+
+ <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- model_header _start -->
+      <div class="modal-header bg-danger">
+        <h1 class="modal-title fs-5 text-capitalize fw-bold text-white" id="exampleModalToggleLabel">Emergency contacts</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- model_header_end -->
+       <!-- model_body_start -->
+      <div class="modal-body">
+       <!-- contact_list start-->
+       <table class="table table-success  table-hover ">
+        <!-- header_part -->
+         <thead>
+          <tr>
+            <th>Emergency Contacts</th>
+            <th>Contact Number</th>
+          </tr>
+         </thead>
+         <!-- header_end -->
+          <tbody>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+
+          </tbody>
+       </table>
+       <!-- contact_list end -->
+      </div>
+      <!-- model_body_end -->
+      <div class="modal-footer bg-danger">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- second model -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h1 class="modal-title text-white fs-5" id="exampleModalToggleLabel2">TimeSlots</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- 2model body -->
+      <div class="modal-body">
+        <table class="table table-success table-hover table-sm">
+          <thead>
+            <tr>
+              <th>Doctor_Name</th>
+              <th>Specilazation</th>
+              <th>Book appointement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+                        <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+            <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer bg-danger ">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Emergency contacts</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- model Box end -->
 
 
 <footer class="footer p-3 border-top">

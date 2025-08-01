@@ -65,6 +65,50 @@
   </nav>
  <!-- header_section end -->
 
+ <!-- Contact_section start -->
+  <section class="contact my-3 ">
+    <div class="container p-3">
+     <div class="row">
+      <!-- img_start -->
+       <div class="col-sm-12 col-md-4 col-lg-4">
+        <img src="./assets/download.jpg" alt="" class="contact-img  img-thumbnail">
+       </div>
+       <!-- img end -->
+       <!-- contact_form_start -->
+       <div class="col-sm-12 col-md-8 col-lg-8">
+         <form class="row g-3 border p-3 rounded shadow">
+            <div class="col-md-6">
+              <label for="inputFirstname" class="form-label fw-bold">FirstName</label>
+              <input type="text" class="form-control" id="inputFirstname" placeholder="firstname">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label fw-bold">LastName</label>
+              <input type="text" class="form-control" id="inputLastName" placeholder="lastname">
+            </div>
+            <div class="col-12">
+              <label for="inputemail" class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" id="inputemail" placeholder="email address">
+            </div>
+            <div class="col-12">
+              <label for="inputPhone" class="form-label fw-bold">Phone</label>
+              <input type="tel" class="form-control" id="inputPhone" placeholder="mobile_no">
+            </div>
+            <div class="col-md-12">
+              <label for="inputZip" class="form-label fw-bold">comment</label>
+               <textarea class="form-control" cols="" rows="5" style="resize: none;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            </div>
+ 
+  <div class="col-12">
+    <button type="submit" class="btn btn-success d-block w-100">contact us</button>
+  </div>
+</form>
+       </div>
+       <!-- contact_form_end -->
+     </div>
+    </div>
+  </section>
+ <!-- Contact_section end -->
+
 <!-- faq section start -->
  <section class="faq-section my-3  ">
    <div class="container p-3">
@@ -156,7 +200,103 @@
 
 
 
+<!-- model Box start -->
 
+<!-- modelButton start -->
+ <button class="btn btn-outline-success d-block position-fixed model_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">CallUsNow</button>
+<!-- modelButton end -->
+
+ <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- model_header _start -->
+      <div class="modal-header bg-danger">
+        <h1 class="modal-title fs-5 text-capitalize fw-bold text-white" id="exampleModalToggleLabel">Emergency contacts</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- model_header_end -->
+       <!-- model_body_start -->
+      <div class="modal-body">
+       <!-- contact_list start-->
+       <table class="table table-success  table-hover ">
+        <!-- header_part -->
+         <thead>
+          <tr>
+            <th>Emergency Contacts</th>
+            <th>Contact Number</th>
+          </tr>
+         </thead>
+         <!-- header_end -->
+          <tbody>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+            <tr>
+              <td>Ambulance</td>
+              <td>102,108</td>
+            </tr>
+
+          </tbody>
+       </table>
+       <!-- contact_list end -->
+      </div>
+      <!-- model_body_end -->
+      <div class="modal-footer bg-danger">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- second model -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h1 class="modal-title text-white fs-5" id="exampleModalToggleLabel2">TimeSlots</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- 2model body -->
+      <div class="modal-body">
+        <table class="table table-success table-hover table-sm">
+          <thead>
+            <tr>
+              <th>Doctor_Name</th>
+              <th>Specilazation</th>
+              <th>Book appointement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+                        <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+            <tr>
+              <td>Rani</td>
+              <td>Neurology</td>
+              <td><Button class="btn btn-info">Book appointement</Button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer bg-danger ">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Emergency contacts</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- model Box end -->
 
 <footer class="footer p-3 border-top">
   <div class="container">
